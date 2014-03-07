@@ -1,0 +1,30 @@
+<!doctype html>
+<html ng-app="filterMadness">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="angular.js filters powered up">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Angular Filter Madness</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="author" href="humans.txt">
+    </head>
+    <body ng-controller="MyCtrl as ctrl">
+        
+        <h1>Basic Filter</h1>
+        <input ng-model="search" />
+        <input ng-model="othersearch" />
+        <div ng-repeat="person in ctrl.people | filter:{'name':search, 'likeables':othersearch}">
+        	<span>{{person.name}}</span>
+        	<span style="color:{{person.favColor}};">{{person.favColor}}</span>
+        	<span>{{person.birthday | date:'medium'}}</span>
+        </div>
+        <h1>Better Filter</h1>
+        <div ng-repeat="person in ctrl.people | betterFilter:search">
+        	<span>{{person.name}}</span>
+        	<span style="color:{{person.favColor}};">{{person.favColor}}</span>
+        	<span>{{person.birthday | date:'medium'}}</span>
+        </div>
+        <script type="text/javascript" src="http://code.angularjs.org/1.2.14/angular.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
