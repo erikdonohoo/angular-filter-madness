@@ -12,7 +12,8 @@
     <body ng-controller="MyCtrl as ctrl">
         
         <div class="container">
-	        <input ng-model="search" placeholder="name" />
+        	<h1>Angular Filter Basics</h1>
+	        <input ng-model="search" placeholder="all" />
 	        <div class="row">
 	        	<div class="col-md-3"><h3>Name</h3></div>
 	        	<div class="col-md-3"><h3>Fav Color</h3></div>
@@ -30,12 +31,12 @@
 	        	<div class="col-md-3" style="color:{{person.favColor}};">{{person.favColor}}</div>
 	        	<div class="col-md-3">{{person.birthday | date:'medium'}}</div>
 	        </div> -->
-	        <h2>Date Filter</h2>
+	        <!-- <h2>Date Filter</h2>
 	        <div class="row" ng-repeat="person in ctrl.people | dateSearch:search">
 	        	<div class="col-md-3">{{person.name}}</div>
 	        	<div class="col-md-3" style="color:{{person.favColor}};">{{person.favColor}}</div>
 	        	<div class="col-md-3">{{person.birthday | date:'medium'}}</div>
-	        </div>
+	        </div> -->
 	    </div>
         <script type="text/javascript" src="http://code.angularjs.org/1.2.14/angular.js"></script>
         <script src="js/main.js"></script>

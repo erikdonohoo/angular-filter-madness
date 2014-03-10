@@ -37,6 +37,7 @@ angular.module('filterMadness', [])
 		'likeables': ['catmandu', 'soil', 'shangri la']
 	}
 ])
+
 .controller('MyCtrl', ['$scope', 'people', function ($scope, people) {
 	this.people = people;
 }])
