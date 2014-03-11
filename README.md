@@ -8,4 +8,4 @@ Angular filters are powerful and are one of the best features in angular.js.  Th
 
 [Demo Video][vid]
 
-[vid]:https://www.youtube.com/user/edonohoo23/videos
+[vid]:https://www.youtube.com/watch?v=MdojCpsE-FQ

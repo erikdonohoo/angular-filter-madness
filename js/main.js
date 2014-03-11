@@ -1,4 +1,5 @@
 angular.module('filterMadness', [])
+
 .constant('people', [
 	{
 		'name': 'Pistol Pete',
